@@ -9,8 +9,6 @@ from playsound import playsound
 combinations = [{keyboard.Key.shift, keyboard.KeyCode(char='s')},{keyboard.Key.shift, keyboard.KeyCode(char='S')}]
 
 
-
-
 def TakeScreenShot(i):
     playsound(r"C:\Users\erdal\OneDrive\Masaüstü\Elektronik\Elektronik resimler\Deklanşör-sesi.wav")
     image = pyautogui.screenshot()
@@ -18,7 +16,6 @@ def TakeScreenShot(i):
     image = cv2.cvtColor(np.array(image),
                          cv2.COLOR_RGB2BGR)
 
-    # writing it to the disk using opencv
     imgName="image{}.jpg".format(i)
     cv2.imwrite(imgName, image)
 
