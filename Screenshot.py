@@ -25,7 +25,7 @@ def TakeScreenShot(i):
 
 current=set()
 
-i=67
+i=1
 
 def on_press(key):
     global i
