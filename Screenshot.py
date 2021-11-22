@@ -12,7 +12,6 @@ combinations = [{keyboard.Key.shift, keyboard.KeyCode(char='s')},{keyboard.Key.s
 
 
 def TakeScreenShot(i):
-    # take screenshot using pyautogui
     playsound(r"C:\Users\erdal\OneDrive\Masaüstü\Elektronik\Elektronik resimler\Deklanşör-sesi.wav")
     image = pyautogui.screenshot()
 
@@ -25,7 +24,7 @@ def TakeScreenShot(i):
 
 current=set()
 
-i=1
+i=0
 
 def on_press(key):
     global i
